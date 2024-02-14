@@ -2,10 +2,10 @@ package com.huseyinyetisir;
 
 import java.util.List;
 
-public class FP01 {
+public class FP01Structured {
     public static void main(String[] args) {
 
-        printNumbersStructured(List.of(1, 2, 3, 4, 45, 6));
+        // printNumbersStructured(List.of(1, 2, 3, 4, 45, 6));
 
     }
 
