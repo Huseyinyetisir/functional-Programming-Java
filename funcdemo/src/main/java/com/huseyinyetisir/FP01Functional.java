@@ -10,23 +10,24 @@ public class FP01Functional {
 
         // printNumbersFunctional(numbers);
         // printNumbersFunctional2(numbers);
-        printNumbersFunctionalWithConditions(numbers);
+        // printNumbersFunctionalWithConditions(numbers);
+        printNumbersFunctionalWithConditions2(numbers);
 
     }
 
-    // private static void print(int number) {
-    // System.out.println(number);
-    // }
+    private static void print(int number) {
+        System.out.println(number);
+    }
 
-    // private static void printNumbersFunctional(List<Integer> numbers) {
-    // numbers.stream()
-    // .forEach(FP01Functional::print);
-    // }
+    private static void printNumbersFunctional(List<Integer> numbers) {
+        numbers.stream()
+                .forEach(FP01Functional::print);
+    }
 
-    // private static void printNumbersFunctional2(List<Integer> numbers) {
-    // numbers.stream()
-    // .forEach(System.out::println);
-    // }
+    private static void printNumbersFunctional2(List<Integer> numbers) {
+        numbers.stream()
+                .forEach(System.out::println);
+    }
 
     public static boolean isEven(int number) {
         return number % 2 == 0;
@@ -36,6 +37,12 @@ public class FP01Functional {
     private static void printNumbersFunctionalWithConditions(List<Integer> numbers) {
         numbers.stream()
                 .filter(FP01Functional::isEven)
+                .forEach(System.out::println);
+    }
+
+    private static void printNumbersFunctionalWithConditions2(List<Integer> numbers) {
+        numbers.stream()
+                .filter(number -> number % 2 == 0)
                 .forEach(System.out::println);
     }
 
